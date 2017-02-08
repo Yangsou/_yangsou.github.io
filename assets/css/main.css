@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+.container-fluid {
+  width: 100%; }
+
+.container,
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.row {
+  min-height: 1px;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class*="col-"] {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-xs-1 {
+  width: 8.33333%; }
+
+.col-xs-2 {
+  width: 16.66667%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-4 {
+  width: 33.33333%; }
+
+.col-xs-5 {
+  width: 41.66667%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-7 {
+  width: 58.33333%; }
+
+.col-xs-8 {
+  width: 66.66667%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-10 {
+  width: 83.33333%; }
+
+.col-xs-11 {
+  width: 91.66667%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .col-sm-1 {
+    width: 8.33333%; }
+
+  .col-sm-2 {
+    width: 16.66667%; }
+
+  .col-sm-3 {
+    width: 25%; }
+
+  .col-sm-4 {
+    width: 33.33333%; }
+
+  .col-sm-5 {
+    width: 41.66667%; }
+
+  .col-sm-6 {
+    width: 50%; }
+
+  .col-sm-7 {
+    width: 58.33333%; }
+
+  .col-sm-8 {
+    width: 66.66667%; }
+
+  .col-sm-9 {
+    width: 75%; }
+
+  .col-sm-10 {
+    width: 83.33333%; }
+
+  .col-sm-11 {
+    width: 91.66667%; }
+
+  .col-sm-12 {
+    width: 100%; } }
+@media (min-width: 992px) {
+  .col-md-1 {
+    width: 8.33333%; }
+
+  .col-md-2 {
+    width: 16.66667%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-md-4 {
+    width: 33.33333%; }
+
+  .col-md-5 {
+    width: 41.66667%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-7 {
+    width: 58.33333%; }
+
+  .col-md-8 {
+    width: 66.66667%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-md-10 {
+    width: 83.33333%; }
+
+  .col-md-11 {
+    width: 91.66667%; }
+
+  .col-md-12 {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  .col-lg-1 {
+    width: 8.33333%; }
+
+  .col-lg-2 {
+    width: 16.66667%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 33.33333%; }
+
+  .col-lg-5 {
+    width: 41.66667%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.33333%; }
+
+  .col-lg-8 {
+    width: 66.66667%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.33333%; }
+
+  .col-lg-11 {
+    width: 91.66667%; }
+
+  .col-lg-12 {
+    width: 100%; } }
+.no-select, button {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none; }
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.bold {
+  font-weight: bold; }
+
+.small {
+  font-weight: 300;
+  font-size: 80%; }
+
+.header {
+  background: #0980AA; }
+
+.header_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #105666; }
+
+.header_top_left a {
+  text-decoration: none;
+  color: #fff; }
+
+.header_content {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center; }
+
+.brand_logo {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #fff; }
+
+.header_search {
+  position: relative; }
+
+.header_search_btn-categories {
+  position: relative;
+  background-color: #fff;
+  color: #080808;
+  width: 80px;
+  height: 30px;
+  float: left;
+  text-align: left;
+  cursor: pointer;
+  padding: 0 8px;
+  font-size: 14px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between; }
+  .header_search_btn-categories::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    right: 1px;
+    top: 5px;
+    background: rgba(8, 8, 8, 0.38); }
+  .header_search_btn-categories span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word; }
+  .header_search_btn-categories .fa-chevron-down {
+    font-size: 10px; }
+
+.header_search_input {
+  outline: none;
+  border: none;
+  width: calc(100% - 80px);
+  height: 30px;
+  padding: 0 38px 0 8px; }
+
+.header_search_btn-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px; }
+
+.header_account {
+  display: flex;
+  display: -webkit-flex;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+  color: #fff; }
+  .header_account .fa {
+    margin-right: 4px; }
+  .header_account span {
+    display: block; }
+
+.header_cart {
+  font-size: 14px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  height: 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 8px; }
+  .header_cart .text {
+    margin: 0 8px; }
+  .header_cart .fa {
+    font-size: 18px; }
+
+.header_cart_value {
+  color: #e22222;
+  background: #fff;
+  padding: 4px; }
+
+/*# sourceMappingURL=main.css.map */
