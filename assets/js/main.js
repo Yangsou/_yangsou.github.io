@@ -13,5 +13,16 @@ $(document).ready(function(){
     //show tabs-content_wrap
     $(this).parent().parent().find('.tabs-content_wrap').removeClass('active');
     $('#' + _tab).addClass('active');
-  })
+  });
+
+  // set width = height image in tabs
+  function setHeightImgInTabs(){
+    var _width = $('.tabs_items .link-img img').innerWidth();
+    $('.tabs_items .link-img img').css('height', _width);
+  }
+  setHeightImgInTabs();
+  $(window).on('resize', function(){
+    setHeightImgInTabs();
+  });
+
 });
