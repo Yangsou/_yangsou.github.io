@@ -311,12 +311,22 @@ html {
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center; }
+  @media (max-width: 767px) {
+    .header_content {
+      padding-bottom: 46px;
+      position: relative; } }
 
 .brand_logo {
   font-family: "Berkshire Swash", cursive;
   font-size: 2.4rem;
   text-decoration: none;
   color: #fff; }
+
+@media (max-width: 767px) {
+  .header_search_wrap {
+    position: absolute;
+    bottom: 8px;
+    left: 0; } }
 
 .header_search {
   position: relative;
@@ -363,10 +373,12 @@ html {
   -webkit-transform: translateY(100%) scale(0);
   -moz-transform: translateY(100%) scale(0);
   -ms-transform: translateY(100%) scale(0);
+  -o-transform: translateY(100%) scale(0);
   transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -webkit-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -moz-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -ms-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -o-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   transform-origin: top left;
   width: 200px;
   box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
@@ -383,7 +395,8 @@ html {
     transform: translateY(100%) scale(1);
     -webkit-transform: translateY(100%) scale(1);
     -moz-transform: translateY(100%) scale(1);
-    -ms-transform: translateY(100%) scale(1); }
+    -ms-transform: translateY(100%) scale(1);
+    -o-transform: translateY(100%) scale(1); }
 
 .header_search_input {
   outline: none;
@@ -472,17 +485,20 @@ html {
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
         -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
         transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
         -webkit-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
         -moz-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-        -ms-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+        -ms-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        -o-transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
       .nav_menu li a:hover, .nav_menu li a.active {
         background: #105666; }
         .nav_menu li a:hover::before, .nav_menu li a.active::before {
           transform: scaleX(1);
           -webkit-transform: scaleX(1);
           -moz-transform: scaleX(1);
-          -ms-transform: scaleX(1); }
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1); }
 
 .main_items {
   display: table;
