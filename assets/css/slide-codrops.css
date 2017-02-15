@@ -260,7 +260,7 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 @media screen and (max-width: 840px){
 	.sp-slideshow { height: 345px; }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .container-sp-slideshow{
     padding: 0 !important;
   }
