@@ -488,11 +488,11 @@ html {
   z-index: 98;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
-  transform: translateY(100%) scaleY(0);
-  -webkit-transform: translateY(100%) scaleY(0);
-  -moz-transform: translateY(100%) scaleY(0);
-  -ms-transform: translateY(100%) scaleY(0);
-  -o-transform: translateY(100%) scaleY(0);
+  transform: translateY(100%) scaleY(1);
+  -webkit-transform: translateY(100%) scaleY(1);
+  -moz-transform: translateY(100%) scaleY(1);
+  -ms-transform: translateY(100%) scaleY(1);
+  -o-transform: translateY(100%) scaleY(1);
   transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
@@ -504,11 +504,11 @@ html {
   -ms-transform-origin: top;
   -o-transform-origin: top; }
   .nav_menu.active {
-    transform: translateY(100%) scaleY(1);
-    -webkit-transform: translateY(100%) scaleY(1);
-    -moz-transform: translateY(100%) scaleY(1);
-    -ms-transform: translateY(100%) scaleY(1);
-    -o-transform: translateY(100%) scaleY(1); }
+    transform: translateY(100%) scaleY(0);
+    -webkit-transform: translateY(100%) scaleY(0);
+    -moz-transform: translateY(100%) scaleY(0);
+    -ms-transform: translateY(100%) scaleY(0);
+    -o-transform: translateY(100%) scaleY(0); }
   .nav_menu > li {
     width: 200px;
     max-width: 200px;

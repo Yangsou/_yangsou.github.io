@@ -28,6 +28,7 @@ $(document).ready(function(){
   $('#collapse-nav-btn').on('click', function(e){
     e.preventDefault();
     $('.nav_menu').toggleClass('active');
+    $('.sp-slideshow').toggleClass('fluid');
   });
 
   $(window).on('click', function(e){
