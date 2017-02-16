@@ -24,5 +24,17 @@ $(document).ready(function(){
   $(window).on('resize', function(){
     setHeightImgInTabs();
   });
+  // handle buntton collapse-nav
+  $('#collapse-nav-btn').on('click', function(e){
+    e.preventDefault();
+    $('.nav_menu').toggleClass('active');
+  });
 
+  $(window).on('click', function(e){
+    e.preventDefault();
+    console.log(e);
+    if(e.clientX > 200){
+      $('.nav_menu').removeClass('active');
+    }
+  })
 });

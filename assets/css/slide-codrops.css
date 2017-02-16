@@ -1,12 +1,10 @@
 .sp-slideshow {
-  position: relative;
-	margin: 15px auto;
-	width: 80%;
-  width: 100%;
-	height: 460px;
-	/*border: 10px solid #fff;*/
-	/*border: 10px solid rgba(255,255,255,0.9);*/
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    position: relative;
+    margin: 15px auto;
+    width: calc(100% - 200px);
+    float: right;
+    height: 460px;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
 }
 
 .sp-content {
@@ -256,6 +254,11 @@ input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
 input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
 input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 	opacity: 1;
+}
+@media (max-width: 1024px) {
+  .sp-slideshow {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 840px){
 	.sp-slideshow { height: 345px; }
