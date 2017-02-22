@@ -1,5 +1,10 @@
 .header
   background: $blue-primary
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 999
 
 .header_top
   padding:
@@ -130,6 +135,9 @@
   border: 1px solid $white
   color: $white
   padding: 0 8px
+  &:hover
+    background-color: $blue-second
+    border-color: $blue-second
   .text
     margin: 0 4px
     @media (max-width: 596px)
