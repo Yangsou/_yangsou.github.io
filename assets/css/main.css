@@ -294,8 +294,24 @@ html {
   margin: auto;
   max-width: 100%; }
 
+.clear-fix {
+  clear: both; }
+
+.pull-left {
+  float: left; }
+
+.btn-default {
+  background: transparent;
+  border: 1px solid #ececec;
+  padding: 8px 1em; }
+
 .header {
-  background: #0980AA; }
+  background: #0980AA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
 
 .header_top {
   padding-top: 8px;
@@ -446,6 +462,9 @@ html {
   border: 1px solid #fff;
   color: #fff;
   padding: 0 8px; }
+  .header_cart:hover {
+    background-color: #105666;
+    border-color: #105666; }
   .header_cart .text {
     margin: 0 4px; }
     @media (max-width: 596px) {
@@ -657,6 +676,7 @@ html {
     margin: 0;
     float: left;
     max-width: 250px;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     background: #0980AA;
@@ -844,7 +864,143 @@ html {
   .item_sidebar_wrap ul li .price {
     text-decoration: line-through; }
 
+footer {
+  background: #ececec;
+  border-top: 1px solid rgba(8, 8, 8, 0.1); }
+
 .footer-wrap .brand_logo {
   color: #0980AA; }
+
+.main {
+  padding-top: 110px; }
+  @media (max-width: 767px) {
+    .main {
+      padding-top: 156px; } }
+
+.title-link {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  position: relative; }
+  .title-link::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ececec;
+    box-shadow: 0 1px 2px rgba(8, 8, 8, 0.2); }
+  .title-link .fa {
+    font-size: 10px; }
+  .title-link a {
+    color: #080808; }
+    .title-link a:hover {
+      text-decoration: underline; }
+
+.sidebar-left {
+  border: 1px solid #ececec;
+  padding-bottom: 8px;
+  border-top-color: transparent; }
+  .sidebar-left .link-btn {
+    border-radius: 2px;
+    border: 1px solid #0980AA;
+    width: calc(100% - 16px);
+    margin: auto;
+    display: block;
+    padding: 4px 0.3em;
+    color: #0980AA;
+    text-align: center; }
+    .sidebar-left .link-btn:hover {
+      background-color: #0980AA;
+      color: #fff; }
+
+.sb-left_title {
+  padding: 8px 0.5em;
+  border-bottom: 1px solid #ececec;
+  margin: 0 0 8px; }
+
+.sb-left_lists .list-link {
+  display: block; }
+  .sb-left_lists .list-link a {
+    padding: 4px 0 4px 1em;
+    display: block;
+    color: #080808; }
+    .sb-left_lists .list-link a:hover {
+      background-color: #ececec; }
+      .sb-left_lists .list-link a:hover .fa-star-o {
+        color: #fff; }
+    .sb-left_lists .list-link a .fa-star {
+      color: #ffdd00; }
+    .sb-left_lists .list-link a .fa-star-o {
+      color: #ececec; }
+  .sb-left_lists .list-link .lists > li > a {
+    padding-left: 2em;
+    line-height: 14px; }
+.sb-left_lists .list-items {
+  display: block;
+  width: 100%;
+  margin-top: 8px; }
+  .sb-left_lists .list-items a {
+    color: #080808; }
+    .sb-left_lists .list-items a:hover {
+      color: #105666;
+      text-decoration: underline; }
+  .sb-left_lists .list-items .promotion {
+    background: #e22222;
+    color: #fff;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    margin: 4px 0 4px 10px; }
+    .sb-left_lists .list-items .promotion::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 0;
+      border-style: solid;
+      border-width: 10px;
+      border-color: transparent #e22222 transparent transparent; }
+
+.main_lists_title {
+  background: #ececec;
+  padding: 8px 0.5em;
+  margin: 0; }
+
+.main_lists_group-btn {
+  clear: both;
+  margin: 8px auto 0;
+  padding: 8px 0;
+  display: table;
+  width: 100%; }
+  .main_lists_group-btn button {
+    border-color: rgba(8, 8, 8, 0.4);
+    margin-bottom: 8px; }
+    .main_lists_group-btn button:not(:first-child) {
+      margin-left: 8px; }
+
+.pagging-wrap {
+  margin: 8px auto; }
+  .pagging-wrap .menus {
+    list-style: none;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center; }
+    .pagging-wrap .menus li {
+      display: inline-block;
+      width: 20px;
+      height: 20px; }
+      .pagging-wrap .menus li .menu {
+        border: 1px solid transparent;
+        color: #0980AA;
+        font-size: 18px;
+        display: block;
+        text-align: center; }
+        .pagging-wrap .menus li .menu.active {
+          border-color: rgba(8, 8, 8, 0.4);
+          color: #080808; }
 
 /*# sourceMappingURL=main.css.map */

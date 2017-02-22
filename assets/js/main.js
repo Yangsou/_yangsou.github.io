@@ -32,10 +32,10 @@ $(document).ready(function(){
   });
 
   $(window).on('click', function(e){
-    e.preventDefault();
+    // e.preventDefault();
     console.log(e);
-    if(e.clientX > 200){
+    if(e.clientX > 200 && window.innerWidth <= 1024 ){
       $('.nav_menu').removeClass('active');
     }
-  })
+  });
 });

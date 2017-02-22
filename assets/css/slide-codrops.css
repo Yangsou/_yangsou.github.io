@@ -1,3 +1,6 @@
+.container-sp-slideshow{
+    padding-top: 110px;
+}
 .sp-slideshow {
     position: relative;
     margin: 15px auto;
@@ -41,7 +44,7 @@
 	left: 50%;
 	width: 9px;
 	height: 9px;
-	z-index: 1001;
+	z-index: 11;
 	cursor: pointer;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -55,7 +58,7 @@
     width: 6px;
 	height: 6px;
 	display: block;
-	z-index: 1000;
+	z-index: 10;
 	border: 3px solid #fff;
 	border: 3px solid rgba(255,255,255,0.9);
     -webkit-border-radius: 50%;
@@ -97,7 +100,7 @@
 	display: none;
 	opacity: 0.8;
 	cursor: pointer;
-	z-index: 1000;
+	z-index: 10;
 	background: transparent url(../images/arrows.png) no-repeat;
 	-webkit-transition: opacity linear 0.3s;
     -moz-transition: opacity linear 0.3s;
@@ -272,7 +275,7 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 }
 @media screen and (max-width: 767px) {
   .container-sp-slideshow{
-    padding: 0 !important;
+    padding: 156px 0 0 0 !important;
   }
 }
 @media screen and (max-width: 680px){
