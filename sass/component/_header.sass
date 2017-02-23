@@ -119,19 +119,26 @@
   position: relative
   cursor: pointer
   color: $white
+  padding: 4px
+  border: 1px solid transparent
+  text-align: left
   .fa
     margin-right: 4px
   span
     display: block
     @media (max-width: 597px)
       display: none
+  &:hover
+    border-color: $white
+    .fa
+      color: $blue-second
 
 .header_cart
   font-size: 14px
   +displayFlex()
   +alignItems(center)
   +justifyContent(space-between)
-  height: 30px
+  height: 38px
   border: 1px solid $white
   color: $white
   padding: 0 8px

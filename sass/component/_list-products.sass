@@ -68,9 +68,18 @@
       // white-space: nowrap
       // text-overflow: ellipsis
   .list-items
-    display: block
+    display: table
     width: 100%
     margin-top: 8px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      bottom: -2px
+      left: 23px
+      width: calc(100% - 16px)
+      height: 1px
+      background: $silver
     a
       color: $black
       &:hover
@@ -112,6 +121,8 @@
     margin-bottom: 8px
     &:not(:first-child)
       margin-left: 8px
+    &:hover
+      background: $silver
 
 .pagging-wrap
   margin: 8px auto

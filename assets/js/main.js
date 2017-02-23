@@ -38,4 +38,9 @@ $(document).ready(function(){
       $('.nav_menu').removeClass('active');
     }
   });
+
+  //popup login form login
+  $('.header_account').on('click', () => {
+    console.log('show login form');
+  });
 });

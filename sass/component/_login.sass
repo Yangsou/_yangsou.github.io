@@ -1,0 +1,111 @@
+#popup-login
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  z-index: 9999
+  background: rgba($black, 0.9)
+
+#popup-login_btn-close
+  width: 40px
+  height: 40px
+  position: fixed
+  top: 0
+  right: 0
+  background: rgba($white, 0.4)
+  border-radius: 50%
+  font-size: 18px
+  &:hover
+    background: $white
+    .fa
+      color: $black
+
+.popup-login_wrap
+  position: fixed
+  top: 50%
+  left: 50%
+  min-width: 300px
+  +transform(translate(-50%, -50%))
+  background: rgba(0,0,0,0.8)
+  padding-bottom: 8px
+
+.login_title
+  color: $white
+  display: block
+  text-align: center
+
+.login_items
+  position: relative
+  width: 100%
+  height: 30px
+  border-bottom: 1px solid $white
+  margin-bottom: 1em
+  input
+    width: 100%
+    height: 100%
+    background: transparent
+    outline: none
+    border: none
+    padding-left: 20px
+    color: $white
+    &:focus ~ .line
+      +transform(scaleX(1))
+    &::-webkit-input-placeholder
+      color: rgba($white, 0.4)
+      font-style: italic
+    &::-moz-input-placeholder
+      color: rgba($white, 0.4)
+      font-style: italic
+    &::-ms-input-placeholder
+      color: rgba($white, 0.4)
+      font-style: italic
+  .icon
+    position: absolute
+    top: 7px
+    left: 0
+    .fa
+      color: $white
+    .fa-lock
+      font-size: 18px
+  .line
+    position: absolute
+    bottom: -1px
+    left: 0
+    width: 100%
+    height: 1px
+    display: block
+    background: $blue-primary
+    +transform(scaleX(0))
+    +transition(transform $transition)
+
+// .remember-wrap
+//   @extend .no-select
+//   +displayFlex()
+//   +alignItems(center)
+//   label
+//     color: $white
+//     margin-left: 0.2em
+//     cursor: pointer
+//   input[type="checkbox"]
+//     cursor: pointer
+//
+// .forgot-wrap
+//   a
+//     color: $white
+//     text-align: right
+//     &:hover
+//       text-decoration: underline
+
+.btn-login
+  width: 100%
+  height: 40px
+  margin-top: 15px
+  border: 1px solid $white
+  color: $white
+  font-size: 15px
+  &:hover
+    background: $blue-primary
+    border-color: transparent
