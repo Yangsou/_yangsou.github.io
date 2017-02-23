@@ -43,8 +43,8 @@
           </div>
           <div class="col-xs-9 col-sm-6 col-md-4 header_content_right">
             <button class="header_account">
-              <i class="fa fa-2x fa-user" aria-hidden="true"></i>
-              <div>
+              <i class="fa fa-2x fa-user pull-left" aria-hidden="true"></i>
+              <div class="pull-left">
                 <span class="bold">Đăng nhập</span>
                 <span class="small">Tài khoản và đơn hàng</span>
               </div>
@@ -369,7 +369,6 @@
         </div>
     </div>
     <!-- end main -->
-
     <!-- footer -->
     <footer>
       <div class="footer-wrap container">
@@ -410,7 +409,7 @@
     <!-- end html -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <div id="popup-login">
+    <div id="popup-login" class="hidden">
       <div class="popup-login_wrap col-xs-8 col-sm-6 col-md-5 col-lg-4">
         <h1 class="login_title">Login</h3>
           <!-- email or username, u can change it with in its icon -->
@@ -426,7 +425,7 @@
           <span class="line"></span>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
           <div class="col-xs-6 remember-wrap">
             <input type="checkbox" id="remember" name="remember" value="false">
             <label for="remember">Remember me</label>
@@ -434,9 +433,16 @@
           <div class="col-xs-6 forgot-wrap">
             <a class="pull-right" href="#">Forgot password?</a>
           </div>
-        </div> -->
+        </div>
 
         <button class="btn-login">Login with Vivu account</button>
+        <!-- login by facebook/google+ wrap -->
+        <div class="login-socials">
+          <button class="social-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+          <button class="social-google"><i class="fa fa-google-plus-official" aria-hidden="true"></i></button>
+        </div>
+        <hr>
+        <p class="login_items_text">Don't have an Account? <a href="#">REGISTER NOW</a></p>
       </div>
       <button id="popup-login_btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
     </div>

@@ -41,6 +41,10 @@ $(document).ready(function(){
 
   //popup login form login
   $('.header_account').on('click', () => {
-    console.log('show login form');
+    $('#popup-login').show();
+  });
+  //hide popup-login
+  $('#popup-login_btn-close').on('click', () => {
+    $('#popup-login').hide();
   });
 });

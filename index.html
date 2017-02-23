@@ -44,13 +44,13 @@
           </form>
         </div>
         <div class="col-xs-9 col-sm-6 col-md-4 header_content_right">
-          <div class="header_account">
-            <i class="fa fa-2x fa-user" aria-hidden="true"></i>
-            <div>
+          <button class="header_account">
+            <i class="fa fa-2x fa-user pull-left" aria-hidden="true"></i>
+            <div class="pull-left">
               <span class="bold">Đăng nhập</span>
               <span class="small">Tài khoản và đơn hàng</span>
             </div>
-          </div>
+          </button>
           <button class="header_cart">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             <span class="text">Giỏ hàng</span><span class="header_cart_value">100</span></button>
@@ -442,11 +442,77 @@
   <footer>
     <div class="footer-wrap container">
       <div class="row">
-        <div class="col-xs-2"><a href="#" class="brand_logo">Vivu</a></div>
+        <div class="col-sm-3 col-md-2"><a href="#" class="brand_logo">Vivu</a></div>
+        <div class="col-sm-3 col-md-4">
+          <h3 class="footer_title">Cras ultricies ligula.</h3>
+          <ul class="footer_lists">
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-md-4">
+          <h3 class="footer_title">Cras ultricies ligula.</h3>
+          <ul class="footer_lists">
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+            <li><a href="#" class="list">Cras ultricies ligula sed magna dictum porta.</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 col-md-2">
+          <h3 class="footer_title">Cras ultricies ligula</h3>
+          <ul class="footer_lists footer_lists-socials">
+            <li><a href="#" class="social"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="social"><i class="fa fa-2x fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="social"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+          <p class="copyright">
+          Copyright (c) 2017 Copyright Vivu All Rights Reserved.</p>
+        </div>
       </div>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <div id="popup-login" class="hidden">
+    <div class="popup-login_wrap col-xs-8 col-sm-6 col-md-5 col-lg-4">
+      <h1 class="login_title">Login</h3>
+        <!-- email or username, u can change it with in its icon -->
+      <div class="login_items">
+        <input type="text" placeholder="Email"/>
+        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+        <span class="line"></span>
+      </div>
+      <!-- password -->
+      <div class="login_items">
+        <input type="password" placeholder="Password"/>
+        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+        <span class="line"></span>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 remember-wrap">
+          <input type="checkbox" id="remember" name="remember" value="false">
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="col-xs-6 forgot-wrap">
+          <a class="pull-right" href="#">Forgot password?</a>
+        </div>
+      </div>
+
+      <button class="btn-login">Login with Vivu account</button>
+      <!-- login by facebook/google+ wrap -->
+      <div class="login-socials">
+        <button class="social-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+        <button class="social-google"><i class="fa fa-google-plus-official" aria-hidden="true"></i></button>
+      </div>
+      <hr>
+      <p class="login_items_text">Don't have an Account? <a href="#">REGISTER NOW</a></p>
+    </div>
+    <button id="popup-login_btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+  </div>
 </body>
 </html>
