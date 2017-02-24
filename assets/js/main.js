@@ -34,7 +34,6 @@ $(document).ready(function(){
   }
   handleNavMenu();
   function hideNavMenuWhenWindowScroll(){
-    console.log(window.innerWidth);
     if( window.innerWidth >= 1024 && ($('.nav_menu').height() + $('.nav_menu').offset().top) >= $('.main').offset().top){
       $('.nav_menu').addClass('active');
       $('.sp-slideshow').addClass('fluid');
@@ -42,8 +41,6 @@ $(document).ready(function(){
   }
   hideNavMenuWhenWindowScroll();
   $(window).on('click', function(e){
-    // e.preventDefault();
-    console.log(e);
     if(e.clientX > 200 && window.innerWidth <= 1024 ){
       $('.nav_menu').removeClass('active');
     }
