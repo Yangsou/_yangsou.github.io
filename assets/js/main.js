@@ -25,18 +25,30 @@ $(document).ready(function(){
     setHeightImgInTabs();
   });
   // handle buntton collapse-nav
-  $('#collapse-nav-btn').on('click', function(e){
-    e.preventDefault();
-    $('.nav_menu').toggleClass('active');
-    $('.sp-slideshow').toggleClass('fluid');
-  });
-
+  function handleNavMenu(){
+    $('#collapse-nav-btn').on('click', function(e){
+      e.preventDefault();
+      $('.nav_menu').toggleClass('active');
+      $('.sp-slideshow').toggleClass('fluid');
+    });
+  }
+  handleNavMenu();
+  function hideNavMenuWhenWindowScroll(){
+    console.log(window.innerWidth);
+    if( window.innerWidth >= 1024 && ($('.nav_menu').height() + $('.nav_menu').offset().top) >= $('.main').offset().top){
+      $('.nav_menu').addClass('active');
+      $('.sp-slideshow').addClass('fluid');
+    };
+  }
+  hideNavMenuWhenWindowScroll();
   $(window).on('click', function(e){
     // e.preventDefault();
     console.log(e);
     if(e.clientX > 200 && window.innerWidth <= 1024 ){
       $('.nav_menu').removeClass('active');
     }
+  }).on('scroll', () => {
+    hideNavMenuWhenWindowScroll();
   });
 
   //popup login form login

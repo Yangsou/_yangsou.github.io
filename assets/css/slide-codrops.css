@@ -1,5 +1,6 @@
 .container-sp-slideshow{
     padding-top: 110px;
+    display: table;
 }
 .sp-slideshow {
     position: relative;

@@ -953,10 +953,10 @@ footer {
   margin-top: 1em;
   color: rgba(8, 8, 8, 0.6); }
 
-.main {
+.main-orther {
   padding-top: 110px; }
   @media (max-width: 767px) {
-    .main {
+    .main-orther {
       padding-top: 156px; } }
 
 .title-link {
