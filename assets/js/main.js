@@ -51,6 +51,13 @@ $(document).ready(function(){
   //popup login form login
   $('.header_account').on('click', () => {
     $('#popup-login').show();
+      $(window).on('scroll', () => {
+        if($(window).innerWidth() >= 992){
+          $('#popup-login').hide();  
+        }
+
+      });
+
   });
   //hide popup-login
   $('#popup-login_btn-close').on('click', () => {

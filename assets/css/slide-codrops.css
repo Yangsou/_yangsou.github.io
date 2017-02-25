@@ -1,6 +1,7 @@
 .container-sp-slideshow{
     padding-top: 110px;
-    display: table;
+    overflow: auto;
+    /*display: table;*/
 }
 .sp-slideshow {
     position: relative;
