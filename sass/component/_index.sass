@@ -157,9 +157,14 @@
         +animation(spin_loop 2000ms ease-in-out 0ms infinite)
         @keyframes spin_loop
           from
-            transform: rotate(0)
+            +transform(rotate(0))
           to
-            transform: rotate(-360deg)
+            +transform(rotate(-360deg))
+        @-webkit-keyframes spin_loop
+          from
+            +transform(rotate(0))
+          to
+            +transform(rotate(-360deg))
     @media (max-width: 1024px)
       background: $blue-primary
       color: $white

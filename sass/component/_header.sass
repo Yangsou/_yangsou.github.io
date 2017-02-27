@@ -7,13 +7,19 @@
   z-index: 999
 
 .header_top
-  padding:
-    top: 8px
-    bottom: 8px
+  height: 32px
+  +displayFlex()
+  +alignItems(center)
   background:
     color: $blue-second
+  +transition(all 450ms)
+  overflow: hidden
+
+.header_top-hide
+  height: 0
 
 .header_top_left
+  margin: 0 !important
   a
     text-decoration: none
     color: $white
