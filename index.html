@@ -485,38 +485,146 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <div id="popup-login" class="hidden">
+  <div id="popup-login" class="modal hidden">
     <div class="popup-login_wrap col-xs-8 col-sm-6 col-md-5 col-lg-4">
-      <h1 class="login_title">Đăng nhập</h1>
-      <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
-      <hr>
+      <div class="modal_wrap">
+        <h1 class="login_title">Đăng nhập</h1>
+        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+        <hr>
 
-        <!-- email or username, u can change it with in its icon -->
-      <p>Email</p>
-      <div class="login_items">
-        <input type="text" placeholder="Nhập Email"/>
-        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-        <span class="line"></span>
+          <!-- email or username, u can change it with in its icon -->
+        <p>Email</p>
+        <div class="login_items">
+          <input type="text" placeholder="Nhập Email"/>
+          <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <span class="line"></span>
+        </div>
+        <!-- password -->
+        <p>Password</p>
+        <div class="login_items">
+          <input type="password" placeholder="Nhập mật khẩu"/>
+          <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+          <span class="line"></span>
+        </div>
+        <p>Quên mật khẩu? Nhấn vào <a href="#">Đây</a></p>
+        <button class="btn-login">
+          <div>Login with Vivu account</div>
+        </button>
+        <button class="btn-login btn-login-fb">
+          <div>Login with facebook</div>
+        </button>
+        <button class="btn-login btn-login-gg">
+          <div>Login with google</div>
+        </button>
+        <button id="popup-login_btn-close" class="modal_btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
       </div>
-      <!-- password -->
-      <p>Password</p>
-      <div class="login_items">
-        <input type="password" placeholder="Nhập mật khẩu"/>
-        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-        <span class="line"></span>
-      </div>
-      <p>Quên mật khẩu? Nhấn vào <a href="#">Đây</a></p>
-      <button class="btn-login">
-        <div>Login with Vivu account</div>
-      </button>
-      <button class="btn-login btn-login-fb">
-        <div>Login with facebook</div>
-      </button>
-      <button class="btn-login btn-login-gg">
-        <div>Login with google</div>
-      </button>
     </div>
-    <button id="popup-login_btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+  </div>
+  <!-- popup sign in -->
+  <div id="popup-signin" class="modal hidden">
+    <div class="popup-login_wrap col-xs-10 col-sm-9 col-md-8 col-lg-7">
+      <div class="modal_wrap">
+        <h1 class="login_title">Đăng ký</h1>
+        <p>Bạn đã có tài khoản? <a href="#">Đăng nhập</a></p>
+        <hr>
+        <div class="row">
+          <div class="col-xs-8">
+              <div class="signin_items row">
+                <label class="col-xs-3" for="">Email:</label>
+                <div class="col-xs-9">
+                  <input type="text" class="signin_input-text">
+                </div>
+              </div>
+              <div class="signin_items row">
+                <label class="col-xs-3" for="">Họ tên:</label>
+                <div class="col-xs-9">
+                  <input type="text" class="signin_input-text">
+                </div>
+              </div>
+              <div class="signin_items row">
+                <label class="col-xs-3" for="">Mật khẩu:</label>
+                <div class="col-xs-9">
+                  <input type="password" class="signin_input-text">
+                </div>
+              </div>
+              <div class="signin_items row">
+                <label class="col-xs-3" for="">Giới tính:</label>
+                <div class="col-xs-9 sex-wrap">
+                  <div>
+                    <input type="radio" id="male" name="sex">
+                    <label for="male">
+                      <span class="check"></span>Nam
+                    </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="female" name="sex">
+                    <label for="female">
+                      <span class="check"></span>Nữ
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="signin_items row">
+                <label for="" class="col-xs-3">Ngày sinh</label>
+                <div class="col-xs-9">
+                  <select class="signin_select" name="" id="">
+                    <option value="">Ngày</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <select class="signin_select" name="" id="">
+                    <option value="">Tháng</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                  </select>
+                  <select class="signin_select" name="" id="">
+                    <option value="">Năm</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="signin_items row">
+                <div class="col-xs-3">&nbsp;</div>
+                <div class="col-xs-9 checkbox_mail-wrap">
+                  <input type="checkbox" id="checkbox_mail"/>
+                  <label for="checkbox_mail" class="text">
+                    <span class="select"></span> Nhận thông tin khuyến mãi</label>
+                  <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">Điều kiện sử dụng và chính sách quy định của Vivu</a></p>
+                  <button class="btn_submit-signin">
+                    <div>Đăng ký</div>
+                  </button>
+                </div>
+              </div>
+          </div>
+          <div class="col-xs-4 signin_social">
+            <h4 class="title">Đăng nhập bằng tài khoản mạng xã hội</h4>
+            <div class="signin_social_item">
+              <button class="signin_social_btn-fb">
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                Đăng nhập bằng facebook</button>
+            </div>
+          </div>
+        </div>
+
+        <button id="popup-signin_btn-close" class="modal_btn-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+      </div>
+
+    </div>
   </div>
   <!-- notifications -->
   <div id="notify" class="col-xs-10 col-sm-6 col-md-4 col-lg-3 notify notify-fixed">

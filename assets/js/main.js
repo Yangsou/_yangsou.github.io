@@ -60,7 +60,16 @@ $(document).ready(function(){
     $('#popup-login').hide();
     $('body').removeClass('popup-in');
   });
-
+  // popup sigin
+  $('.login_btn-signin').on('click', () => {
+    $('#popup-signin').show();
+    $('body').addClass('popup-in');
+  });
+  $('#popup-signin_btn-close').on('click', () => {
+    $('#popup-signin').hide();
+    $('body').removeClass('popup-in');
+  });
+  // $('')
   //slider
 
   var countDisplay = 2;
