@@ -49,18 +49,54 @@ $(document).ready(function(){
   });
 
   //popup login form login
-  $('.header_account').on('click', () => {
+  $('.login_btn-login').on('click', () => {
     $('#popup-login').show();
-      $(window).on('scroll', () => {
-        if($(window).innerWidth() >= 992){
-          $('#popup-login').hide();  
-        }
 
-      });
+    $('body').addClass('popup-in');
 
   });
   //hide popup-login
   $('#popup-login_btn-close').on('click', () => {
     $('#popup-login').hide();
+    $('body').removeClass('popup-in');
   });
+
+  //slider
+
+  var countDisplay = 2;
+  $(window).on('resize', function(){
+    sliderControl();
+  });
+  sliderControl();
+  function sliderControl() {
+    if(window.innerWidth < 768) countDisplay = 2;
+    if(window.innerWidth >=  768) countDisplay = 3;
+    if(window.innerWidth >= 992) countDisplay = 4;
+    if(window.innerWidth >= 1200) countDisplay = 5;
+    var sliderIndex = 0,
+        sliderWrap = $('.slider-wrap'),
+        sliderWrapWidth = sliderWrap.innerWidth(),
+        sliderContainer = $('.sliders'),
+        sliderItem = $('.slider');
+        sliderItemWidth = sliderWrapWidth / countDisplay;
+        sliderContainerWidth = sliderItem.length * sliderItemWidth;
+        sliderItem.css('width', sliderItemWidth);
+        sliderContainer.css('width', sliderContainerWidth);
+
+    console.log(sliderContainerWidth / (sliderItemWidth * countDisplay) );
+
+    $('.sliders').css('transform','translateX(-' + sliderIndex * sliderWrapWidth + 'px)');
+
+    $('.slider_btn-next').on('click', function(){
+      sliderIndex++;
+      if(sliderIndex > sliderContainerWidth / (sliderItemWidth * countDisplay))
+        sliderIndex --;
+      $('.sliders').css('transform','translateX(-' + sliderIndex * sliderWrapWidth + 'px)');
+    });
+    $('.slider_btn-prev').on('click', function(){
+      sliderIndex --;
+      if(sliderIndex < 0) sliderIndex = 0;
+      $('.sliders').css('transform','translateX(-' + sliderIndex * sliderWrapWidth + 'px)');
+    });
+  }
 });

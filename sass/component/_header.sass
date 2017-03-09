@@ -120,6 +120,7 @@
   +alignItems(center)
 
 .header_account
+  z-index: 100
   float: left
   margin-right: 8px
   position: relative
@@ -138,6 +139,55 @@
     border-color: $white
     .fa
       color: $blue-second
+    .login-wrap
+      display: block
+      *
+        display: block
+
+.login-wrap
+  display: none
+  position: absolute
+  bottom: 0
+  left: 50%
+  width: 200px
+  height: auto
+  padding-top: 10px
+  z-index: 4
+  +transform(translate(-50%, 100% ))
+
+.login-wrap_contain
+  padding: 8px
+  background: $white
+  box-shadow: $shadow
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: -20px
+    left: 50%
+    border:
+      style: solid
+      width: 10px
+      color: transparent transparent $white transparent
+
+.login_btn
+  color: $black
+  background: #ffde00
+  padding:
+    top: 8px
+    bottom: 8px
+  text-align: center
+  border-radius: 2px
+  &:not(:first-child)
+    margin-top: 8px
+
+.login_btn-fb
+  background: $blue-primary
+  color: $white
+
+.login_btn-gg
+  color: $white
+  background: $red
 
 .header_cart
   font-size: 14px
