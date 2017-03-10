@@ -7,7 +7,7 @@
   width: 100vw
   height: 100vh
   z-index: 9999
-  background: rgba($silver, 0.9)
+  background: rgba($black, 0.37)
 
 .modal_wrap
   position: relative
@@ -18,26 +18,33 @@
   position: absolute
   top: -40px
   right: -35px
-  background: rgba($silver, 1)
+  background: rgba($white, 1)
   border-radius: 50%
   font-size: 16px
   &:hover
-    background: $white
+    background: rgba($black,.2)
     box-shadow: $shadow
     .fa
       font-size: 18px
       color: $black
+  @media (max-width: 992px)
+    top: 0
+    right: 0
 
-.popup-login_wrap
+.popup_wrap
   position: fixed
   top: 50%
   left: 50%
   min-width: 300px
   +transform(translate(-50%, -50%))
-  box-shadow: $shadow
+  box-shadow: rgba($white, 0.11765) 0px 1px 6px, rgba($white, 0.11765) 0px 1px 4px
   border: 1px solid rgba($black, 0.1)
   background: rgba($white,1)
   padding-bottom: 8px
+  max-height: 100vh
+  @media (max-width: 992px)
+    overflow-x: hidden
+    overflow-y: scroll
   hr
     margin: 1em 0
     border-bottom: 0

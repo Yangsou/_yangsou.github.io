@@ -5,8 +5,44 @@
   margin-top: 30px
 
 .detail-img_wrap
+  position: relative
+  background:
+    repeat: no-repeat
+    color: transparent
+    size: contain
+    position: center center
+  border: 1px solid rgba($black, 1)
+  padding: 2px
   img
     display: block
+    cursor: pointer
+    // &:hover ~ .detail-image_mouse
+      // display: block
+
+// .detail-image_mouse
+//   position: absolute
+//   display: none
+//   width: 100px
+//   height: 100px
+//   border: 1px solid rgba($black, 0.6)
+//   background: rgba($black, 0.3)
+//   box-shadow: $shadow
+
+.detail-image_zoom
+  width: 400px
+  height: 400px
+  border: 1px solid rgba($black, 0.4)
+  position: absolute
+  top: 0
+  right: -10px
+  z-index: 10
+  display: none
+  +transform(translate(100%, 0))
+  background:
+    image: url(../images/book.jpg)
+    size: 1000px
+    position: -20px -30px
+    repeat: no-repeat
 
 .detail-img_group-btn
   margin-top: 30px
