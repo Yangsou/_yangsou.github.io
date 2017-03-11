@@ -120,4 +120,9 @@ $(document).ready(function(){
   }).on('mouseleave', ()=>{
     $('.detail-image_zoom').css('display', 'none');
   });
+
+  //notify
+  $('.notify_btn-close').on('click', function(){
+      $(this).parent().parent().hide();
+  })
 });
