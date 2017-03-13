@@ -51,9 +51,7 @@ $(document).ready(function(){
   //popup login form login
   $('.login_btn-login').on('click', () => {
     $('#popup-login').show();
-
     $('body').addClass('popup-in');
-
   });
   //hide popup-login
   $('#popup-login_btn-close').on('click', () => {
@@ -70,6 +68,16 @@ $(document).ready(function(){
     $('body').removeClass('popup-in');
   });
   // $('')
+  $('.move-to-login').on('click', (e) =>{
+    e.preventDefault();
+    $('#popup-signin').hide();
+    $('#popup-login').show();
+  });
+  $('.move-to-signin').on('click', (e)=>{
+    e.preventDefault();
+    $('#popup-login').hide();
+    $('#popup-signin').show();
+  });
   //slider
 
   var countDisplay = 2;

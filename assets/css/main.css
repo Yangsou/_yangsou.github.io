@@ -1259,11 +1259,11 @@ footer {
   border-radius: 50%;
   font-size: 16px; }
   .modal_btn-close:hover {
-    background: rgba(8, 8, 8, 0.2);
+    background: rgba(8, 8, 8, 0.4);
     box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px; }
     .modal_btn-close:hover .fa {
       font-size: 18px;
-      color: #080808; }
+      color: #fff; }
   @media (max-width: 992px) {
     .modal_btn-close {
       top: 0;
@@ -1347,6 +1347,19 @@ footer {
     -moz-transition: width 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     -ms-transition: width 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     -o-transition: width 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+
+.require-wrap {
+  padding-bottom: 16px;
+  position: relative; }
+  .require-wrap .require {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    display: none; }
+    .require-wrap .require.error {
+      color: #e22222; }
+    .require-wrap .require.required {
+      display: block; }
 
 .remember-wrap {
   display: flex;

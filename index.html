@@ -494,7 +494,7 @@
         <div class="popup_wrap col-xs-8 col-sm-6 col-md-5 col-lg-4">
             <div class="modal_wrap">
                 <h1 class="login_title">Đăng nhập</h1>
-                <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                <p>Bạn chưa có tài khoản? <a class="move-to-signin" href="#">Đăng ký</a></p>
                 <hr>
 
                 <!-- email or username, u can change it with in its icon -->
@@ -531,43 +531,48 @@
         <div class="popup_wrap col-xs-10 col-sm-9 col-md-8 col-lg-7">
             <div class="modal_wrap">
                 <h1 class="login_title">Đăng ký</h1>
-                <p>Bạn đã có tài khoản? <a href="#">Đăng nhập</a></p>
+                <p>Bạn đã có tài khoản? <a class="move-to-login" href="#">Đăng nhập</a></p>
                 <hr>
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="signin_items row">
                             <label class="col-xs-3" for="">Email:</label>
-                            <div class="col-xs-9">
+                            <div class="col-xs-9 require-wrap">
                                 <input type="text" class="signin_input-text">
+                                <span class="require error required">Donec sollicitudin molestie malesuada.</span>
                             </div>
                         </div>
                         <div class="signin_items row">
                             <label class="col-xs-3" for="">Họ tên:</label>
-                            <div class="col-xs-9">
+                            <div class="col-xs-9 require-wrap">
                                 <input type="text" class="signin_input-text">
+                                <span class="require error">Donec sollicitudin molestie malesuada.</span>
                             </div>
                         </div>
                         <div class="signin_items row">
                             <label class="col-xs-3" for="">Mật khẩu:</label>
-                            <div class="col-xs-9">
+                            <div class="col-xs-9 require-wrap">
                                 <input type="password" class="signin_input-text">
+                                <span class="require error">Donec sollicitudin molestie malesuada.</span>
                             </div>
                         </div>
                         <div class="signin_items row">
                             <label class="col-xs-3" for="">Giới tính:</label>
-                            <div class="col-xs-9 sex-wrap">
+                            <div class="col-xs-9 sex-wrap require-wrap">
                                 <div>
                                     <input type="radio" id="male" name="sex">
                                     <label for="male">
-                      <span class="check"></span>Nam
-                    </label>
+                                      <span class="check"></span>Nam
+                                    </label>
                                 </div>
                                 <div>
                                     <input type="radio" id="female" name="sex">
                                     <label for="female">
-                      <span class="check"></span>Nữ
-                    </label>
+                                      <span class="check"></span>Nữ
+                                    </label>
                                 </div>
+                                <span class="require error">Donec sollicitudin molestie malesuada.</span>
+
                             </div>
                         </div>
                         <div class="signin_items row">
