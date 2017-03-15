@@ -1253,8 +1253,8 @@ footer {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: -40px;
-  right: -35px;
+  top: 0;
+  right: 0;
   background: white;
   border-radius: 50%;
   font-size: 16px; }
@@ -1283,11 +1283,9 @@ footer {
   border: 1px solid rgba(8, 8, 8, 0.1);
   background: white;
   padding-bottom: 8px;
-  max-height: 100vh; }
-  @media (max-width: 992px) {
-    .popup_wrap {
-      overflow-x: hidden;
-      overflow-y: scroll; } }
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll; }
   .popup_wrap hr {
     margin: 1em 0;
     border-bottom: 0; }
@@ -1443,6 +1441,9 @@ footer {
   border-radius: 4px; }
   .signin_input-text:focus {
     outline-color: #0980AA; }
+  .signin_input-text.textarea {
+    height: 40px;
+    resize: none; }
 
 .sex-wrap {
   display: flex;
@@ -1455,7 +1456,7 @@ footer {
     align-items: center;
     -webkit-align-items: center;
     margin-right: 2em;
-    width: 50px;
+    min-width: 50px;
     cursor: pointer; }
   .sex-wrap .check {
     width: 20px;
@@ -1564,6 +1565,10 @@ footer {
     justify-content: center;
     -webkit-justify-content: center;
     text-align: center; }
+
+.signin_select-full {
+  width: 100%;
+  padding: 0.5em; }
 
 .notify {
   height: 80px;
