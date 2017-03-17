@@ -1289,7 +1289,7 @@ footer {
   padding-bottom: 8px;
   max-height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow-y: hidden; }
   .popup_wrap hr {
     margin: 1em 0;
     border-bottom: 0; }
@@ -1481,7 +1481,8 @@ footer {
 
 .signin_select {
   padding: 8px 0.6em;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #fff; }
   .signin_select:not(:first-child) {
     margin-left: 4px; }
 
@@ -1571,6 +1572,7 @@ footer {
     text-align: center; }
 
 .signin_select-full {
+  background: #fff;
   width: 100%;
   padding: 0.5em; }
 
@@ -1720,9 +1722,9 @@ footer {
   background-color: transparent;
   background-size: contain;
   background-position: center center;
-  border: 1px solid #080808;
   padding: 2px; }
-  .detail-img_wrap img {
+  .detail-img_wrap .img-detail {
+    width: calc(100% - 80px);
     display: block;
     cursor: pointer; }
 
@@ -1744,6 +1746,9 @@ footer {
   background-size: 1000px;
   background-position: -20px -30px;
   background-repeat: no-repeat; }
+  @media (max-width: 1024px) {
+    .detail-image_zoom {
+      display: none !important; } }
 
 .detail-img_group-btn {
   margin-top: 30px; }
@@ -1904,10 +1909,10 @@ hr.margin-top-bottom {
     -o-transform: rotate(360deg); }
 
 .slider_btn-next {
-  right: 0; }
+  right: 8px; }
 
 .slider_btn-prev {
-  left: 0; }
+  left: 8px; }
 
 .slider_link {
   display: block;
@@ -1942,6 +1947,41 @@ hr.margin-top-bottom {
 
 .slider_link_text {
   padding-left: 1em; }
+
+.slider-col-detail {
+  width: 80px;
+  margin-top: 15px; }
+
+.slider-col {
+  height: 200px;
+  position: relative; }
+  .slider-col .slider_btn {
+    width: 30px;
+    height: 30px;
+    left: 25px;
+    background-color: transparent; }
+  .slider-col .slider_btn-up {
+    top: -30px; }
+  .slider-col .slider_btn-down {
+    top: auto;
+    bottom: -40px; }
+
+.slider-col_wrap {
+  height: 100%;
+  overflow: hidden; }
+
+.slider-col_sliders {
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+
+.slider-detail_img {
+  padding: 4px;
+  border: 1px solid rgba(8, 8, 8, 0.1); }
+  .slider-detail_img img {
+    cursor: pointer; }
 
 .cart-title {
   position: relative; }
