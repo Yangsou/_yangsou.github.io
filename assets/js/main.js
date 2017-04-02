@@ -161,5 +161,10 @@ $(document).ready(function(){
   //notify
   $('.notify_btn-close').on('click', function(){
       $(this).parent().parent().hide();
-  })
+  });
+
+  $('.pay_atm-wrap_item').on('click', function(){
+    $('.pay_atm-wrap_item').removeClass('active');
+    $(this).addClass('active');
+  });
 });
