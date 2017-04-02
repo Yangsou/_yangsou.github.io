@@ -2270,4 +2270,15 @@ hr.margin-top-bottom {
   .order-btn:hover::before {
     display: block; }
 
+.list-address {
+  margin-bottom: 15px; }
+
+.list-address_item {
+  border: 1px dotted #0980AA;
+  padding: 0px 15px 8px; }
+
+.btn-primary {
+  background: #0980AA;
+  color: #fff; }
+
 /*# sourceMappingURL=main.css.map */

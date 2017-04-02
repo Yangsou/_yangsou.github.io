@@ -167,4 +167,9 @@ $(document).ready(function(){
     $('.pay_atm-wrap_item').removeClass('active');
     $(this).addClass('active');
   });
+
+  $('.btn-add-address-wrap').on('click', function(e){
+    e.preventDefault();
+    $('.add-address-wrap').show();
+  })
 });

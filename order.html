@@ -189,170 +189,195 @@
     <hr>
     <div class="container main">
       <!-- section step 1 -->
-      <h2 class="title">1. Khach hang moi/ Dang nhap</h2>
-      <div class="order-wrap">
-        <div class="group-btn-login">
-          <p class="text-align">Thanh toán đơn hàng trong chỉ một bước với:</p>
-          <button class="login_btn login_btn-fb padding">Đăng nhập bằng facebook</button>
-          <span>Hoac</span>
-          <button class="login_btn login_btn-gg padding">Đăng nhập bằng google</button>
-        </div>
-        <div class="row">
-          <div class="col-md-9 margin-top">
-            <div class="order-login row">
-              <div class="switch-btn col-md-5 col-no-padding">
-                <button class="btn-default btn-switch-btn btn-switch-btn_login tabs_btn active" data-tab="order-login">
-                  <span class="bold">Dang nhap</span>
-                  <span class="small">Da la thanh vien Vivu</span>
-                </button>
-                <button class="btn-default btn-switch-btn btn-switch-btn_register tabs_btn" data-tab="order-register">
-                  <span class="bold">Tao tai khoan</span><span class="small">Danh cho khach moi</span>
-                </button>
-              </div>
-              <div class="order-login_wrap col-md-7">
-                <div id="order-login" class="tabs-content_wrap active order-tabs">
-                  <p>Email</p>
-                  <div class="login_items">
+      <!-- <div class="step-1">
+        <h2 class="title">1. Khach hang moi/ Dang nhap</h2>
+        <div class="order-wrap">
+          <div class="group-btn-login">
+            <p class="text-align">Thanh toán đơn hàng trong chỉ một bước với:</p>
+            <button class="login_btn login_btn-fb padding">Đăng nhập bằng facebook</button>
+            <span>Hoac</span>
+            <button class="login_btn login_btn-gg padding">Đăng nhập bằng google</button>
+          </div>
+          <div class="row">
+            <div class="col-md-9 margin-top">
+              <div class="order-login row">
+                <div class="switch-btn col-md-5 col-no-padding">
+                  <button class="btn-default btn-switch-btn btn-switch-btn_login tabs_btn active" data-tab="order-login">
+                    <span class="bold">Dang nhap</span>
+                    <span class="small">Da la thanh vien Vivu</span>
+                  </button>
+                  <button class="btn-default btn-switch-btn btn-switch-btn_register tabs_btn" data-tab="order-register">
+                    <span class="bold">Tao tai khoan</span><span class="small">Danh cho khach moi</span>
+                  </button>
+                </div>
+                <div class="order-login_wrap col-md-7">
+                  <div id="order-login" class="tabs-content_wrap active order-tabs">
+                    <p>Email</p>
+                    <div class="login_items">
                       <input type="text" placeholder="Nhập Email" />
                       <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                       <span class="line"></span>
-                  </div>
-                  <p>Password</p>
-                  <div class="login_items">
+                    </div>
+                    <p>Password</p>
+                    <div class="login_items">
                       <input type="password" placeholder="Nhập mật khẩu" />
                       <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
                       <span class="line"></span>
+                    </div>
+                    <p>Quên mật khẩu? Nhấn vào <a href="#">Đây</a></p>
+                    <button class="btn-login">
+                      <div>Dang nhap</div>
+                    </button>
                   </div>
-                  <p>Quên mật khẩu? Nhấn vào <a href="#">Đây</a></p>
-                  <button class="btn-login">
-                    <div>Dang nhap</div>
-                  </button>
-                </div>
-                <div id="order-register" class="tabs-content_wrap order-tabs">
-                  <div class="signin_items row">
+                  <div id="order-register" class="tabs-content_wrap order-tabs">
+                    <div class="signin_items row">
                       <label class="col-xs-3" for="">Email:</label>
                       <div class="col-xs-9 require-wrap">
-                          <input type="text" class="signin_input-text">
-                          <span class="require error required">Donec sollicitudin molestie malesuada.</span>
+                        <input type="text" class="signin_input-text">
+                        <span class="require error required">Donec sollicitudin molestie malesuada.</span>
                       </div>
-                  </div>
-                  <div class="signin_items row">
+                    </div>
+                    <div class="signin_items row">
                       <label class="col-xs-3" for="">Họ tên:</label>
                       <div class="col-xs-9 require-wrap">
-                          <input type="text" class="signin_input-text">
-                          <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                        <input type="text" class="signin_input-text">
+                        <span class="require error">Donec sollicitudin molestie malesuada.</span>
                       </div>
-                  </div>
-                  <div class="signin_items row">
+                    </div>
+                    <div class="signin_items row">
                       <label class="col-xs-3" for="">Mật khẩu:</label>
                       <div class="col-xs-9 require-wrap">
-                          <input type="password" class="signin_input-text">
-                          <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                        <input type="password" class="signin_input-text">
+                        <span class="require error">Donec sollicitudin molestie malesuada.</span>
                       </div>
-                  </div>
-                  <div class="signin_items row">
+                    </div>
+                    <div class="signin_items row">
                       <label class="col-xs-3" for="">Giới tính:</label>
                       <div class="col-xs-9 sex-wrap require-wrap">
-                          <div>
-                              <input type="radio" id="male" name="sex">
-                              <label for="male">
-                                <span class="check"></span>Nam
-                              </label>
-                          </div>
-                          <div>
-                              <input type="radio" id="female" name="sex">
-                              <label for="female">
-                                <span class="check"></span>Nữ
-                              </label>
-                          </div>
-                          <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                        <div>
+                          <input type="radio" id="male" name="sex">
+                          <label for="male">
+                            <span class="check"></span>Nam
+                          </label>
+                        </div>
+                        <div>
+                          <input type="radio" id="female" name="sex">
+                          <label for="female">
+                            <span class="check"></span>Nữ
+                          </label>
+                        </div>
+                        <span class="require error">Donec sollicitudin molestie malesuada.</span>
 
                       </div>
-                  </div>
-                  <div class="signin_items row">
+                    </div>
+                    <div class="signin_items row">
                       <label for="" class="col-xs-3">Ngày sinh</label>
                       <div class="col-xs-9">
-                          <select class="signin_select" name="" id="">
-                            <option value="">Ngày</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                          </select>
-                          <select class="signin_select" name="" id="">
-                            <option value="">Tháng</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                            <option value="">7</option>
-                            <option value="">8</option>
-                            <option value="">9</option>
-                            <option value="">10</option>
-                            <option value="">11</option>
-                            <option value="">12</option>
-                          </select>
-                          <select class="signin_select" name="" id="">
-                            <option value="">Năm</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                          </select>
+                        <select class="signin_select" name="" id="">
+                          <option value="">Ngày</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                        </select>
+                        <select class="signin_select" name="" id="">
+                          <option value="">Tháng</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                          <option value="">5</option>
+                          <option value="">6</option>
+                          <option value="">7</option>
+                          <option value="">8</option>
+                          <option value="">9</option>
+                          <option value="">10</option>
+                          <option value="">11</option>
+                          <option value="">12</option>
+                        </select>
+                        <select class="signin_select" name="" id="">
+                          <option value="">Năm</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                        </select>
                       </div>
-                  </div>
-                  <div class="signin_items row">
+                    </div>
+                    <div class="signin_items row">
                       <div class="col-xs-3">&nbsp;</div>
                       <div class="col-xs-9 checkbox_mail-wrap">
-                          <input type="checkbox" id="checkbox_mail" />
-                          <label for="checkbox_mail" class="text">
-                            <span class="select"></span> Nhận thông tin khuyến mãi</label>
+                        <input type="checkbox" id="checkbox_mail" />
+                        <label for="checkbox_mail" class="text">
+                          <span class="select"></span> Nhận thông tin khuyến mãi</label>
                           <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">Điều kiện sử dụng và chính sách quy định của Vivu</a></p>
                           <button class="btn_submit-signin">
-                              <div>Đăng ký</div>
-                            </button>
+                            <div>Đăng ký</div>
+                          </button>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box box-padding">
+                  <div class="col-xs-8">
+                    <p class="margin-top-xs">Dong hang (1 san pham)</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <button class="pull-right btn-default btn-edit">Sua</button>
+                  </div>
+                  <hr class="clear-fix cart_hr box_hr">
+
+                  <div class="col-xs-8">
+                    <p class="">1 x <a href="#">Pellentesque in ipsum id orci porta dapibus.</a></p>
+                  </div>
+                  <div class="col-xs-4">
+                    340000d
+                  </div>
+                  <hr class="clear-fix cart_hr box_hr">
+
+                  <div class="col-xs-4">Tam tinh</div>
+                  <div class="col-xs-8 cart_box-price">340000d</div>
+                  <hr class="clear-fix cart_hr box_hr">
+                  <div class="col-xs-4">Thanh tien</div>
+                  <div class="col-xs-8">
+                    <p class="cart_box-price red big">340000d</p>
+                    <p class="small cart_box-small">(Da bao gom VAT)</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="box box-padding">
-              <div class="col-xs-8">
-                <p class="margin-top-xs">Dong hang (1 san pham)</p>
-              </div>
-              <div class="col-xs-4">
-                <button class="pull-right btn-default btn-edit">Sua</button>
-              </div>
-              <hr class="clear-fix cart_hr box_hr">
-
-              <div class="col-xs-8">
-                <p class="">1 x <a href="#">Pellentesque in ipsum id orci porta dapibus.</a></p>
-              </div>
-              <div class="col-xs-4">
-                340000d
-              </div>
-              <hr class="clear-fix cart_hr box_hr">
-
-              <div class="col-xs-4">Tam tinh</div>
-              <div class="col-xs-8 cart_box-price">340000d</div>
-              <hr class="clear-fix cart_hr box_hr">
-              <div class="col-xs-4">Thanh tien</div>
-              <div class="col-xs-8">
-                <p class="cart_box-price red big">340000d</p>
-                <p class="small cart_box-small">(Da bao gom VAT)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> -->
       <!-- end section step 1 -->
 
       <!-- section step 2 -->
-      <!-- <div class="step-2">
+      <div class="step-2">
         <h2 class="title">2. Dia chi giao hang</h2>
-        <div class="order-wrap">
+        <div class="list-address row">
+          <div class="col-xs-6">
+            <div class="list-address_item list-address_item-default">
+              <h4>Nguyen Thanh</h4>
+              <p>Dia chi: Lys thuong kiet, Phường 01, Quận Tân Bình, Hồ Chí Minh</p>
+              <p>Viet nam</p>
+              <p>Dien thoai: 0987654321</p>
+              <button class="btn-default btn-primary margin-top">Giao den dia chi nay</button>
+              <button class="btn-default">Sua</button>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="list-address_item list-address_item-default">
+              <h4>Nguyen Thanh</h4>
+              <p>Dia chi: Lys thuong kiet, Phường 01, Quận Tân Bình, Hồ Chí Minh</p>
+              <p>Viet nam</p>
+              <p>Dien thoai: 0987654321</p>
+              <button class="btn-default btn-primary margin-top">Giao den dia chi nay</button>
+              <button class="btn-default">Sua</button>
+            </div>
+          </div>
+        </div>
+        <p>Bạn muốn giao hàng đến địa chỉ khác? <a class="btn-add-address-wrap" href="javascript:void(0)">Thêm địa chỉ giao hàng mới</a></p>
+        <div class="order-wrap margin-top add-address-wrap hidden">
           <div class="order-wrap_address row">
             <div class="order-wrap_address_container col-xs-12 col-sm-8 col-md-6">
               <div class="signin_items row">
@@ -426,9 +451,9 @@
               </div>
             </div>
           </div>
-      </div> -->
+      </div>
      <!-- end step 2 -->
-     
+
       <!-- section step 3 -->
       <!-- <div class="step-3">
         <h2 class="title">1. Chon hinh thuc giao hang</h2>
