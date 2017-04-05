@@ -99,3 +99,18 @@
 .margin-top-xs
   @media (max-width: 767px)
     margin-top: 1em
+
+.cart-input-wrap
+  position: relative
+
+.cart-input-wrap_icon
+  position: absolute
+  right: -14px
+  top: calc(50% + 2px)
+  +transform(translate(0, -50%))
+  width: 14px
+  height: 14px
+  &.check
+    color: rgb(30,140,130)
+  &.error
+    color: $red

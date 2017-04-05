@@ -2086,6 +2086,25 @@ hr.margin-top-bottom {
   .margin-top-xs {
     margin-top: 1em; } }
 
+.cart-input-wrap {
+  position: relative; }
+
+.cart-input-wrap_icon {
+  position: absolute;
+  right: -14px;
+  top: calc(50% + 2px);
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  width: 14px;
+  height: 14px; }
+  .cart-input-wrap_icon.check {
+    color: #1e8c82; }
+  .cart-input-wrap_icon.error {
+    color: #e22222; }
+
 .order-process {
   padding: 15px;
   display: flex;
