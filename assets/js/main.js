@@ -171,5 +171,10 @@ $(document).ready(function(){
   $('.btn-add-address-wrap').on('click', function(e){
     e.preventDefault();
     $('.add-address-wrap').show();
-  })
+  });
+
+  //input in carts.html(number)
+  $('.cart-input-number ').on('change', function(){
+    $(this).parent().find('button').show();
+  });
 });

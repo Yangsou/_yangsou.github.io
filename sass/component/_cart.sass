@@ -6,9 +6,26 @@
 .cart-name
   margin-top: 0 !important
 
+.cart-input-wrap
+  position: relative
+
 .cart-input-number
   width: 100%
   padding: 0.5em
+
+.cart-input-wrap_icon
+  margin-top: 4px
+  padding: 4px 8px
+  +transition(all $transition)
+  // display: none
+  &:hover
+    background: $silver
+    box-shadow: $shadow
+  &.check
+    color: rgb(30,140,130)
+  &.error
+    color: $red
+
 
 .cart_item
   padding-top: 1em
@@ -99,18 +116,3 @@
 .margin-top-xs
   @media (max-width: 767px)
     margin-top: 1em
-
-.cart-input-wrap
-  position: relative
-
-.cart-input-wrap_icon
-  position: absolute
-  right: -14px
-  top: calc(50% + 2px)
-  +transform(translate(0, -50%))
-  width: 14px
-  height: 14px
-  &.check
-    color: rgb(30,140,130)
-  &.error
-    color: $red
