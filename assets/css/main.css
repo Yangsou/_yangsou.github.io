@@ -1767,6 +1767,7 @@ footer {
 
 .btn-add-cart {
   border-radius: 3px;
+  margin-left: 1%;
   color: #fff;
   background: #e22222;
   height: 40px;
@@ -2271,10 +2272,22 @@ hr.margin-top-bottom {
 
 .list-address_item {
   border: 1px dotted #0980AA;
-  padding: 0px 15px 8px; }
+  padding: 0px 15px 8px;
+  position: relative; }
+  .list-address_item .default {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #1e8c82; }
 
 .btn-primary {
   background: #0980AA;
   color: #fff; }
+
+.list-address_item_row {
+  padding: 1%; }
+
+.btn-address {
+  margin: 3px; }
 
 /*# sourceMappingURL=main.css.map */
