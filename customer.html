@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>Vivu</title>
 </head>
-
 <body>
     <header class="header">
         <div class="header_top">
@@ -77,8 +75,8 @@
 
         <div class="nav container">
             <button id="collapse-nav-btn">
-        <i class="fa fa-bars" aria-hidden="true"></i>Danh mục
-      </button>
+              <i class="fa fa-bars" aria-hidden="true"></i>Danh mục
+            </button>
             <ul class="nav_menu">
                 <li>
                     <a class="" href="#"><i class="fa fa-folder" aria-hidden="true"></i>Curabitur aliquet quam id dui posuere blandit.</a>
@@ -174,290 +172,202 @@
             </ul>
         </div>
     </header>
-    <!-- slider main -->
-    <div class="container container-sp-slideshow">
-        <div class="sp-slideshow">
 
-            <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
-            <label for="button-1" class="button-label-1"></label>
 
-            <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
-            <label for="button-2" class="button-label-2"></label>
-
-            <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
-            <label for="button-3" class="button-label-3"></label>
-
-            <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
-            <label for="button-4" class="button-label-4"></label>
-
-            <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
-            <label for="button-5" class="button-label-5"></label>
-
-            <label for="button-1" class="sp-arrow sp-a1"></label>
-            <label for="button-2" class="sp-arrow sp-a2"></label>
-            <label for="button-3" class="sp-arrow sp-a3"></label>
-            <label for="button-4" class="sp-arrow sp-a4"></label>
-            <label for="button-5" class="sp-arrow sp-a5"></label>
-
-            <div class="sp-content">
-                <div class="sp-parallax-bg"></div>
-                <ul class="sp-slider clearfix">
-                    <li><img src="assets/images/image1.png" alt="image01" /></li>
-                    <li><img src="assets/images/image2.png" alt="image02" /></li>
-                    <li><img src="assets/images/image3.png" alt="image03" /></li>
-                    <li><img src="assets/images/image4.png" alt="image04" /></li>
-                    <li><img src="assets/images/image5.png" alt="image05" /></li>
-                </ul>
+    <div class="container main main-other">
+      <div class="title-link">
+          <a href="#">Trang chủ</a>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          <a href="#">Thong tin tai khoan</a>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-md-3">
+          <div class="customer_menu">
+            <div class="customer_item customer_item-flex">
+              <img src="assets/images/avatar06.png" alt="" class="customer_item_avatar img-responsive">
+              <p class="customer_item_username">Tai khoan cua: <br>
+                <span>Nguyen Nam</span>
+              </p>
             </div>
-            <!-- sp-content -->
-
+            <div class="customer_item">
+              <a href="#" class="active">
+                <span><i class="fa fa-user"></i></span>
+                Thong tin tai khoan
+              </a>
+            </div>
+            <div class="customer_item">
+              <a href="#">
+                <span><i class="fa fa-bell"></i></span>
+                Thong bao cua toi
+                <span class="customer_item_notify">99+</span>
+              </a>
+            </div>
+            <div class="customer_item">
+              <a href="#">
+                <span><i class="fa fa-list-alt"></i></span>
+                Quan ly don hang
+              </a>
+            </div>
+            <div class="customer_item"></div>
+            <div class="customer_item"></div>
+            <div class="customer_item"></div>
+            <div class="customer_item"></div>
+          </div>
         </div>
-        <!-- sp-slideshow -->
+        <div class="col-sm-8 col-md-9">
+            <!-- thong tin tai khoan -->
+              <!-- <h1>Thong tin tai khoan</h1>
+              <div class="customer_content pull-left">
+              <div class="col-sm-9 col-md-8 col-lg-6">
+                <div class="signin_items row">
+                  <label class="col-xs-3" for="">Email:</label>
+                  <div class="col-xs-9 require-wrap">
+                    <input type="text" class="signin_input-text">
+                    <span class="require error required">Donec sollicitudin molestie malesuada.</span>
+                  </div>
+                </div>
+                <div class="signin_items row">
+                  <label class="col-xs-3" for="">Họ tên:</label>
+                  <div class="col-xs-9 require-wrap">
+                    <input type="text" class="signin_input-text">
+                    <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                  </div>
+                </div>
+                <div class="signin_items row">
+                  <label class="col-xs-3" for="">Giới tính:</label>
+                  <div class="col-xs-9 sex-wrap require-wrap">
+                    <div>
+                      <input type="radio" id="male" name="sex">
+                      <label for="male">
+                        <span class="check"></span>Nam
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" id="female" name="sex">
+                      <label for="female">
+                        <span class="check"></span>Nữ
+                      </label>
+                    </div>
+                    <span class="require error">Donec sollicitudin molestie malesuada.</span>
+
+                  </div>
+                </div>
+                <div class="signin_items row">
+                  <label for="" class="col-xs-3">Ngày sinh</label>
+                  <div class="col-xs-9">
+                    <select class="signin_select" name="" id="">
+                      <option value="">Ngày</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                    <select class="signin_select" name="" id="">
+                      <option value="">Tháng</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+                      <option value="">11</option>
+                      <option value="">12</option>
+                    </select>
+                    <select class="signin_select" name="" id="">
+                      <option value="">Năm</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="signin_items row">
+                    <div class="col-xs-3">&nbsp;</div>
+                    <div class="col-xs-9 checkbox_mail-wrap no-select">
+                        <input type="checkbox" id="checkbox_change-password"/>
+                        <label for="checkbox_change-password" class="text">
+                          <span class="select"></span> Thay doi mat khau</label>
+                    </div>
+                </div>
+                <div class="customer_change-password-wrap hidden">
+                  <div class="signin_items row">
+                      <label class="col-xs-3" for="">Mật khẩu cũ:</label>
+                      <div class="col-xs-9 require-wrap">
+                          <input type="password" class="signin_input-text">
+                          <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                      </div>
+                  </div>
+                  <div class="signin_items row">
+                      <label class="col-xs-3" for="">Mật khẩu mới:</label>
+                      <div class="col-xs-9 require-wrap">
+                          <input type="password" class="signin_input-text">
+                          <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                      </div>
+                  </div>
+                  <div class="signin_items row">
+                      <label class="col-xs-3" for="">Nhập lại:</label>
+                      <div class="col-xs-9 require-wrap">
+                          <input type="password" class="signin_input-text">
+                          <span class="require error">Donec sollicitudin molestie malesuada.</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="signin_items row">
+                  <div class="col-xs-3">&nbsp;</div>
+                  <div class="col-xs-9">
+                    <button class="btn_submit-signin">
+                        <div>Cap nhat</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- end thong tin tai khoan -->
+            <h1>Don hang cua toi</h1>
+            <div class="customer_content pull-left">
+              <table class="tbl-default tbl-orders">
+                <thead>
+                  <tr>
+                    <td>Ma don hang</td>
+                    <td>Ngay mua</td>
+                    <td class="product">San pham</td>
+                    <td>Tong tien</td>
+                    <td>Trang thai don hang</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>190020308</td>
+                    <td>06/09/2016</td>
+                    <td>[Gift] Nhập Mã Coupon KIDS30 Giảm 30K Cho ĐH Từ 350K (Cho Đồ Chơi - Thời Trang Mẹ Bé)...và 01 sản phẩm khác</td>
+                    <td>59.400d</td>
+                    <td>Giao hang thanh cong</td>
+                  </tr>
+                  <tr>
+                    <td>190020308</td>
+                    <td>06/09/2016</td>
+                    <td>[Gift] Nhập Mã Coupon KIDS30 Giảm 30K Cho ĐH Từ 350K (Cho Đồ Chơi - Thời Trang Mẹ Bé)...và 01 sản phẩm khác</td>
+                    <td>59.400d</td>
+                    <td>Giao hang thanh cong</td>
+                  </tr>
+                  <tr>
+                    <td>190020308</td>
+                    <td>06/09/2016</td>
+                    <td>[Gift] Nhập Mã Coupon KIDS30 Giảm 30K Cho ĐH Từ 350K (Cho Đồ Chơi - Thời Trang Mẹ Bé)...và 01 sản phẩm khác</td>
+                    <td>59.400d</td>
+                    <td>Giao hang thanh cong</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
     </div>
-    <!-- end slide -->
-    <div class="container main">
-        <!-- main content 1 -->
-        <div class="main_items">
-            <div class="items_head">
-                <h2 class="title">Sản phẩm hot hòn họt nữa nè</h2>
-                <ul class="items_head_menu">
-                    <li><a href="#">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</a></li>
-                    <li><a href="#">the loai-2</a></li>
-                    <li><a href="#">the loai-3</a></li>
-                    <li><a href="#">the loai-4</a></li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 main_items_content">
-                    <a href="#"><img style="margin-bottom: 15px" class="img-responsive" src="assets/images/banner-1.jpg" alt=""></a>
-                    <div class="tabs-wrap">
-                        <!-- button click to active tab -->
-                        <ul class="tabs">
-                            <li data-tab="tabs-content-1" class="tabs_btn col-xs-4 active">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</li>
-                            <li data-tab="tabs-content-2" class="tabs_btn col-xs-4">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</li>
-                            <li data-tab="tabs-content-3" class="tabs_btn col-xs-4">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</li>
-                        </ul>
-                        <!-- content of tabs -->
-                        <div class="tabs-content">
-                            <div id="tabs-content-1" class="row tabs-content_wrap active">
-                                <!-- should use 6 item -->
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop-2.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop-2.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                <!-- end item -->
-                            </div>
-                            <div id="tabs-content-2" class="tabs-content_wrap">content-2</div>
-                            <div id="tabs-content-3" class="tabs-content_wrap">content-3</div>
-                        </div>
-                        <!-- end content tabs -->
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="item_sidebar">
-                        <h3 class="title">Curabitur aliquet quam id dui.</h3>
-                        <div class="item_sidebar_wrap">
-                            <ul>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="more" href="#">Xem thêm</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- main content 2 -->
-        <div class="main_items">
-            <div class="items_head">
-                <h2 class="title">Sản phẩm hot hòn họt nữa nè</h2>
-                <ul class="items_head_menu">
-                    <li><a href="#">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</a></li>
-                    <li><a href="#">the loai-2</a></li>
-                    <li><a href="#">the loai-3</a></li>
-                    <li><a href="#">the loai-4</a></li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 main_items_content">
-                    <a href="#"><img style="margin-bottom: 15px" class="img-responsive" src="assets/images/banner-1.jpg" alt=""></a>
-                    <div class="tabs-wrap">
-                        <!-- button click to active tab -->
-                        <ul class="tabs">
-                            <li data-tab="tabs-content-21" class="tabs_btn col-xs-4 active">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</li>
-                            <li data-tab="tabs-content-22" class="tabs_btn col-xs-4">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</li>
-                            <li data-tab="tabs-content-23" class="tabs_btn col-xs-4">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</li>
-                        </ul>
-                        <!-- content of tabs -->
-                        <div class="tabs-content">
-                            <div id="tabs-content-21" class="row tabs-content_wrap active">
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
 
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop-2.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop-2.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="tabs_items">
-                                        <a class="link-img" href="#"><img class="" src="assets/images/laptop.jpg" class="img-responsive" alt=""></a>
-                                        <a href="#" class="link-text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                        <p class="price-current bold">25000d <span class="promotion">30%</span></p>
-                                        <p class="small price">40000d</p>
-                                        <p class="comment">Chưa có nhận xét</p>
-                                        <button class="add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="tabs-content-22" class="tabs-content_wrap">content-2</div>
-                            <div id="tabs-content-23" class="tabs-content_wrap">content-3</div>
-                        </div>
-                        <!-- end content tabs -->
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="item_sidebar">
-                        <h3 class="title">Curabitur aliquet quam id dui.</h3>
-                        <div class="item_sidebar_wrap">
-                            <ul>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                                <li>
-                                    <a href="#"><img class="img-responsive" src="assets/images/laptop.jpg" alt=""></a>
-                                    <a href="#" class="text">Curabitur aliquet quam id dui posuere blandit.</a>
-                                    <p class="bold price-current">18000d</p>
-                                    <p class="small price">25000d</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="more" href="#">Xem thêm</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end main -->
     <footer>
         <div class="footer-wrap container-fluid">
             <div class="row">
@@ -644,7 +554,7 @@
                                 <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">Điều kiện sử dụng và chính sách quy định của Vivu</a></p>
                                 <button class="btn_submit-signin">
                                     <div>Đăng ký</div>
-                                  </button>
+                                </button>
                             </div>
                         </div>
                         <div class="signin_items row">
@@ -744,5 +654,4 @@
         </div>
     </div>
 </body>
-
 </html>

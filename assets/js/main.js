@@ -177,4 +177,13 @@ $(document).ready(function(){
   $('.cart-input-number ').on('change', function(){
     $(this).parent().find('button').show();
   });
+  //
+  $('#checkbox_change-password').on('click', function(){
+    if($('#checkbox_change-password').is(':checked') ){
+      $('.customer_change-password-wrap').slideToggle();
+    } else {
+      $('.customer_change-password-wrap').slideToggle();
+    }
+  });
+
 });

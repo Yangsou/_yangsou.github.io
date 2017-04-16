@@ -1,0 +1,71 @@
+.customer_item
+  a
+    display: block
+    padding: 8px
+    color: $black
+    .fa
+      margin-right: 1em
+    &:hover
+      background: $silver
+    &.active
+      background: $silver
+
+.customer_item-flex
+  +displayFlex()
+  +alignItems(center)
+  margin: 8px 0
+  .customer_item_avatar
+    margin: 0 !important
+
+.customer_item_notify
+  background: $red
+  padding: 0 4px
+  border-radius: 50%
+  color: $white
+  margin-left: 0.25em
+
+.customer_item_avatar
+  display: inline-block
+  width: 60px
+  height: 60px
+  border-radius: 50%
+
+.customer_item_username
+  display: inline-block
+  span
+    display: inline-block
+    font-size: 1.7em
+    font-weight: 600
+
+.customer_content
+  border: 1px solid rgba($black, .1)
+  box-shadow: $shadow
+  padding: 15px
+  width: 100%
+
+.tbl-default
+  table-layout: fixed
+  width: 100%
+  border-collapse: collapse
+
+.tbl-orders
+  thead
+    tr
+      border-color: transparent
+      &:hover
+        background: transparent
+      td:first-child
+        color: $black
+  tr
+    border-top: 1px solid $silver
+    td
+      padding: 8px
+      &.product
+        min-width: 300px
+        width: 300px
+      &:not(.product)
+        width: 100px
+      &:first-child
+        color: $blue-primary
+    &:hover
+      background: rgba(30, 140, 130, .1)
