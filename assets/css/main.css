@@ -1040,7 +1040,6 @@ html {
     text-decoration: line-through; }
 
 footer {
-  background: #ececec;
   border-top: 1px solid rgba(8, 8, 8, 0.1);
   margin-top: 15px;
   padding-bottom: 8px; }
@@ -1091,6 +1090,13 @@ footer {
   font-size: 12px;
   margin-top: 1em;
   color: rgba(8, 8, 8, 0.6); }
+
+.p-l-15 {
+  padding-left: 45px; }
+
+.footer-small {
+  font-size: 0.9em;
+  color: rgba(8, 8, 8, 0.8); }
 
 .main-other {
   padding-top: 110px; }
@@ -2359,6 +2365,9 @@ hr.margin-top-bottom {
   width: 100%;
   border-collapse: collapse; }
 
+.tbl-hover tbody td:hover {
+  background: rgba(30, 140, 130, 0.1); }
+
 .tbl-orders thead tr {
   border-color: transparent; }
   .tbl-orders thead tr:hover {
@@ -2376,8 +2385,6 @@ hr.margin-top-bottom {
       width: 100px; }
     .tbl-orders tr td:first-child {
       color: #0980AA; }
-  .tbl-orders tr:hover {
-    background: rgba(30, 140, 130, 0.1); }
 
 .font-normal {
   font-weight: normal;
