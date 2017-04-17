@@ -2379,4 +2379,47 @@ hr.margin-top-bottom {
   .tbl-orders tr:hover {
     background: rgba(30, 140, 130, 0.1); }
 
+.font-normal {
+  font-weight: normal;
+  width: 100%; }
+  .font-normal .text {
+    font-size: 14px;
+    text-align: right; }
+
+.m-b-15 {
+  margin-bottom: 15px; }
+
+.detail-box {
+  background: #ececec;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px; }
+  .detail-box h4 {
+    margin-top: 0; }
+
+.hr-clear-fix {
+  background: #ececec;
+  height: 2px;
+  width: 100%;
+  margin: 15px 0; }
+
+.tbl-img {
+  max-width: 100px;
+  float: left; }
+
+.link-underline:hover {
+  text-decoration: underline; }
+
+.item-center {
+  display: table;
+  width: 100% !important; }
+  .item-center * {
+    display: table-cell;
+    vertical-align: middle; }
+
+.red {
+  color: #e22222; }
+
+.m-b-8 {
+  margin-bottom: 8px; }
+
 /*# sourceMappingURL=main.css.map */
